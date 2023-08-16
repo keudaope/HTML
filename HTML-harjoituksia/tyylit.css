@@ -1,0 +1,34 @@
+img {
+    clear: both;
+    float: left;
+    /* vasta tehtävässä 11 - margin: 10px;*/
+}
+body{
+    font-size: 24px;
+}
+#eka{
+    float: left;
+}
+#toka{
+    clear: both;
+    float: right;
+}
+table {
+    border: 1px solid black;
+    /*Vasta tehtävästä 13 -  border-collapse: collapse;*/
+}
+th, td {
+    text-align: left;
+    padding: 0px 10px;
+    /*Vasta tehtävästä 13 - border: 1px solid black;*/
+}
+/*Vasta tehtävästä 14 - 
+th{
+    background-color: #F00000;
+}
+tr:nth-child(odd) {
+    background-color: #FFF000;
+}
+tr:nth-child(even) {
+    background-color: #FFFFF0;
+} */

@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Borel&family=Gochi+Hand&family=Great+Vibes&family=Pacifico&family=Permanent+Marker&display=swap');
+#k1 {
+    font-family: 'Borel', cursive;
+}
+#k2 {
+    font-family: 'Gochi Hand', cursive;
+}
+#k3 {
+    font-family: 'Great Vibes', cursive;
+}
+#k4 {
+    font-family: 'Pacifico', cursive;
+}
+#k5 {
+    font-family: 'Permanent Marker', cursive;
+}
+#otsikko
+{
+    color: green;
+}
+#yksi{
+    font-size: 8px;
+    color: red;
+}
+#kaksi {
+    font-size: 12px;
+    color: aquamarine;
+}
+#kolme {
+    font-size: 16px;
+    color: blue;
+}
+#nelja {
+    font-size: 20px;
+    color: blueviolet;
+}
+#viis {
+    font-size: 24px;
+    color: brown;
+}
+#kuus {
+    font-size: 28px;
+    color: chartreuse;
+}
+#seiska {
+    font-size: 24px;
+    color: darkgray;
+}
+#kasi {
+    font-size: 20px;
+    color: deeppink;
+}
+#ysi {
+    font-size: 16px;
+    color: fuchsia;
+}
+#kymppi {
+    font-size: 12px;
+    color: gold;
+}
