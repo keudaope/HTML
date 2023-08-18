@@ -1,0 +1,43 @@
+table
+{
+    border: 3px dashed pink;
+}
+body {
+    background-image: url("tausta.webp");
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+h2{
+    color: purple;
+    text-decoration: overline;
+    font-family: Verdana;
+    text-align:center;
+    font-size: xx-large;
+}
+ul{
+    color: green;
+    text-decoration: overline;
+    font-family: 'Comic Sans MS';
+    text-align: right;
+    font-size: 80%;
+}
+ol{
+    color: gray;
+    text-decoration: underline;
+    font-family: 'Lucida Console';
+    text-align: left;
+    font-size: 16px;
+}
+li{
+    color: blue;
+    font-family: 'Sans Serif Collection';
+    font-size: 10pt;
+    list-style-type: square;
+}
+p{
+    color: black;
+    text-decoration: overline;
+    font-family: 'Times New Roman';
+    text-align: left;
+    font-size: xx-large;
+}

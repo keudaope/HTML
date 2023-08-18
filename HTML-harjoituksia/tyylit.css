@@ -1,9 +1,9 @@
 img {
     clear: both;
     float: left;
-    margin: 10px;
+ /*   margin: 10px;*/
 }
-body{
+/*body{
     font-size: 24px;
 }
 #eka{
@@ -15,7 +15,7 @@ body{
 }
 table {
     border: 1px solid black;
-    /*Vasta tehtävästä 13 -  border-collapse: collapse;*/
+    Vasta tehtävästä 13 -  border-collapse: collapse;
 }
 th, td {
     text-align: left;
@@ -31,4 +31,4 @@ tr:nth-child(odd) {
 }
 tr:nth-child(even) {
     background-color: #FFFFF0;
-} 
+} */
