@@ -1,0 +1,35 @@
+main {
+    display: flex;
+    overflow: hidden;
+    background-color: aqua;
+    margin: -20px 0 0 0;
+}
+
+aside {
+    flex: 1;
+    order: 2;
+}
+
+header {
+    background-color: red;
+    padding: 20px;
+    text-align: center;
+}
+
+section {
+    width: 70%;
+    order: 1;
+    padding: 20px;
+}
+
+aside {
+    background-color: aquamarine;
+    width: 30%;
+    padding: 20px;
+}
+
+footer {
+    background-color: bisque;
+    padding: 20px;
+    text-align: center;
+}
