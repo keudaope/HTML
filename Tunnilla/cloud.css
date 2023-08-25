@@ -1,0 +1,347 @@
+/*--------------------
+        Yleinen
+---------------------*/
+/* box-sizing: border-box sis‰llytt‰‰ margin ja padding -komennot
+laatikon sis‰‰n, eli laatikko ei kasva, vaikka em. komentoja k‰ytt‰isi,
+niinkuin tapahtuu, jos box-sizing komentoa ei k‰yt‰.
+Kts. https://www.w3schools.com/css/css3_box-sizing.asp */
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+/* Merkkilajin m‰‰ritys seuraavasti:
+- font-family tarkoittaa valittua merkkilajia
+- font-size fontin kokoa
+- line-heigth rivi v‰li‰
+- em tarkoittaa suhteessa fontin kokoon
+Kts. lis‰‰ https://www.w3schools.com/cssref/css_units.asp */
+
+body {
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+    line-height: 1.5em;
+}
+/* Tehty koko bodyn kokoinen sis‰ltˆ"laatikko", jonka id = container
+eli jos HTML5 komennot eiv‰t riit‰, div-komennolla saadaan tehty‰ omia
+block-elementtej‰
+Katso lis‰‰: https://www.w3schools.com/tags/tag_div.ASP
+
+display:table -komennolla voidaan m‰‰ritell‰, ett‰ block-elementit
+k‰ytt‰ytyv‰t kuin table
+Kts. https://www.w3schools.com/cssref/pr_class_display.asp
+
+Leveyden voi myˆs m‰‰ritt‰‰ suhteellisesti, eli prosenteina, jolloin leveys
+suhtautuu koko sivuun automaattisesti, jos katsellaan eri kokoisilta n‰ytˆilt‰
+Kts. https://www.w3schools.com/cssref/pr_dim_width.asp
+
+marginaalin voi m‰‰ritt‰‰ autoksi, jolloin alla olevassa tapauksessa sivu
+keskittyy vaakatasossa ja yl‰- ja alamarginaali on 10px
+Kts. https://www.w3schools.com/css/css_margin.asp
+
+overflow-komento m‰‰rittelee, mit‰ tapahtuu, jos sis‰ltˆ ei mahdu sille
+m‰‰r‰ttyyn blockiin, eli k‰yt‰nnˆss‰, tuleeko scrollbars n‰kyviin. auto
+tarkoittaa sit‰, ett‰ tulevat tarvittaessa n‰kyviin
+Kts. https://www.w3schools.com/css/css_overflow.asp*/
+main {
+    display: table;
+    width: 70%;
+    margin: 10px auto;
+    overflow: auto;
+    background: #FFF;
+}
+/* N‰m‰ selitetty ylemmp‰n‰ */
+p {
+    margin: 10px 0;
+    line-height: 1.5em;
+}
+/* text-transform: capitalize tarkoittaa sit‰, ett‰ riippumatta, miten
+teksti on kirjoitettu h1-t‰gien sis‰‰n, tekstin ensimm‰inen kirjain
+kirjoitetaan isoilla kirjaimilla, muut selitetty ylemp‰n‰
+Kts. https://www.w3schools.com/cssref/pr_text_text-transform.asp */
+h1 {
+    font-family: 'Courgette', cursive;
+    text-transform: capitalize;
+    font-size: 2.5em;
+    font-weight: bold;
+    margin: 20px 0 10px 0;
+    line-height: 1em;
+}
+
+h2, h3, h4 {
+    font-family: 'Great Vibes', cursive;
+    margin: 10px 0;
+}
+
+h2 {
+    font-size: 2.2em;
+}
+
+h3 {
+    font-size: 1.7em;
+}
+
+h4 {
+    font-size: 1.5em;
+}
+
+strong {
+    font-weight: bold;
+}
+/* clearfix -luokalla m‰‰ritet‰‰n, miten kellutus tapahtuu "oikein", eli
+jos kuva on suurempi kuin tekstilaatikko, ilman t‰t‰ se "valuisi" tekstilaatikon
+ulkopuolelle, mutta t‰ll‰ voidaan m‰‰ritt‰‰, ett‰ se pysyy laatikossa.
+:before ja :after tarkoittavat sit‰ mit‰ sanovatkin, eli ennen ja j‰lkeen
+Kts. https://www.w3schools.com/howto/howto_css_clearfix.asp
+
+content-komennolla voidaan m‰‰ritt‰‰ sis‰ltˆ
+Kts. https://www.w3schools.com/cssref/pr_gen_content.asp
+
+display: table selitettiin jo ylemp‰n‰*/
+
+.clearfix:before, .clearfix:after {
+    content: ' ';
+    display: table;
+}
+
+/* clear: both poistaa kellutuksen molemmista suunnista
+Kts. https://www.w3schools.com/cssref/pr_class_clear.asp */
+
+.clearfix:after {
+    clear: both;
+    
+}
+
+.content-header {
+    border-bottom: 1px solid #DDD;
+    margin-bottom: 20px; /* margin: 0 0 20px 0;*/
+    padding-bottom: 10px;
+}
+
+.content-footer {
+    border-top: 1px solid #DDD;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+}
+
+/*-------------------
+      HEADER-block
+---------------------*/
+/* Laitetaan kuvan ja otsikoiden v‰liin sininen 7px viiva */
+
+header {
+    border-bottom: 7px solid #4EA0D9;
+}
+
+/* M‰‰ritet‰‰n logo block-elementiksi ja keskitet‰‰n se */
+
+#logo {
+    display: block;
+    margin: auto;
+}
+
+#titles {
+    margin-bottom: 20px;
+    padding: 10px;
+    text-align: center;
+    color: #333;
+}
+
+
+/*-------------------------
+      Varsinaisen sivun
+      columns elementit
+--------------------------*/
+
+/* Kellutetaan id:left-col vasemmalle ja m‰‰ritet‰‰n sen leveys suhteellisena */
+
+#left {
+    float: left;
+    width: 48%;
+}
+
+    /* m‰‰ritet‰‰n left-col-id:n sis‰ll‰ olevan points-luokan li-elementti */
+
+    #left ul li {
+        margin-bottom: 30px;
+    }
+
+    /* m‰‰ritet‰‰n left-col-id:n sis‰ll‰ olevan points-luokan img-elementti */
+    #left ul img {
+        float: left;
+        margin-right: 10px;
+    }
+
+    /* m‰‰ritet‰‰n left-col-id:n sis‰ll‰ olevan points-luokan h4-block */
+    #left ul h4 {
+        padding-top: 5px;
+    }
+
+/* Kellutetaan right-col-id oikealle ja m‰‰ritet‰‰n sen leveys suhteellisena */
+#right {
+    float: right;
+    width: 48%;
+}
+
+/* border-radius m‰‰ritt‰‰ kulmien pyˆreyden */
+#contact-form {
+    padding: 30px 20px 20px 20px;
+    border: 4px solid #4EA0D8;
+    border-radius: 10px;
+    overflow: auto;
+    background: #F4F4F4;
+}
+
+    #contact-form div {
+        margin-bottom: 20px;
+    }
+
+    #contact-form label {
+        display: inline-block;
+        width: 100px;
+        font-weight: bold;
+    }
+
+    /* m‰‰ritet‰‰n contact-form-id:n sis‰ll‰ olevan text- ja email-input tyypit*/
+    #contact-form input[type='text'],
+    #contact-form input[type='email'] {
+        height: 25px;
+        width: 50%;
+        border: 1px solid #CCC;
+        border-radius: 5px;
+    }
+    /* m‰‰ritet‰‰n contact-form-id:n sis‰ll‰ oleva submit-input-tyyppi */
+    #contact-form input[type='submit'] {
+        display: block;
+        float: right;
+        padding: 12px 17px;
+        background: #FA6E3E;
+        color: #FFF;
+        border: 0;
+        border-radius: 5px;
+    }
+        /* m‰‰ritet‰‰n contact-form-id:n sis‰ll‰ oleva submit-input-tyypin toiminta
+silloin, kun sit‰ osoittaa hiirell‰ (hover)
+Kts. https://www.w3schools.com/cssref/sel_hover.asp
+
+Muutetaan osoitin erilaiseksi - cursor: pointer
+Kts. https://www.w3schools.com/cssref/pr_class_cursor.asp */
+
+        #contact-form input[type='submit']:hover {
+            background: #D55427;
+            cursor: pointer;
+        }
+
+    #contact-form .content-footer p {
+        font-style: italic;
+        text-align: center;
+        color: #777;
+        font-size: .8em;
+    }
+
+/*--------------------------
+      Testimonial-osio
+--------------------------*/
+
+#testimonials {
+    display: table-row;
+    margin: 40px 0;
+    color: #777;
+}
+
+    #testimonials img {
+        float: left;
+        margin-right: 20px;
+    }
+
+    #testimonials blockquote {
+        padding: -30px 30px 20px 30px;
+        width: 90%;
+    }
+
+
+/*-------------------------
+      Footer
+--------------------------*/
+
+#main-footer {
+    border-top: 1px solid #CCC;
+    text-align: center;
+    color: #AAA;
+}
+
+
+/*------------------------
+      Responsiivisuus
+-------------------------*/
+
+/* N‰ytˆt, joiden maksimileveys on 1023px */
+@media (max-width:1023px) {
+    #container {
+        width: 80%;
+    }
+
+    h1 {
+        font-size: 2.2em;
+    }
+
+    #left, #right {
+        width: 100%;
+        clear: both;
+        float: left;
+    }
+
+        #left .points li {
+            width: 80%;
+            margin: 0 auto 30px;
+            padding: 8px;
+            background: #EEE;
+            border-radius: 5px;
+        }
+
+        #left .points img {
+            margin-top: 10px;
+        }
+
+    #testimonials img {
+        display: block;
+        margin: 20px auto;
+        float: none;
+    }
+}
+/* N‰ytˆt, joiden maksimileveys on 799px */
+@media (max-width: 799px) {
+
+    h2 {
+        font-size: 1.7em;
+    }
+
+    h3 {
+        font-size: 1.5em;
+    }
+
+    h4 {
+        font-size: 1.2em;
+    }
+
+    #left, #right {
+        width: 100%;
+        clear: both;
+        /*float: none;*/
+    }
+
+    #contact-form {
+        clear: both;
+        padding: 20px 30px 30px 30px;
+    }
+}
+/* N‰ytˆt, joiden maksimileveys on 479px */
+@media (min-width: 479px) {
+    h1 {
+        font-size: 1.6em;
+    }
+
+    h2 {
+        font-size: 1.2em;
+    }
+}
