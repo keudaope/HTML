@@ -1,0 +1,71 @@
+.container {
+    display: flex;
+}
+
+aside {
+    width: 28%;
+    display: flex;
+    background-color: red;
+    flex-shrink:0;
+}
+
+section.left {
+    width: 70%;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: left;
+}
+
+    li a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+
+        /* Change the link color to #111 (black) on hover */
+        li a:hover {
+            background-color: #111;
+        }
+/*Add an "active" class to the current link to let the user know which page      he/she is on*/
+.active {
+    background-color: #4CAF50;
+}
+
+/* Add a gray right border to all list items, except the last item (last-child) */
+li {
+    border-right: 1px solid #bbb;
+}
+
+    li:last-child {
+        border-right: none;
+    }
+
+.social {
+    position: relative;
+    background: url('social-media.png') no-repeat;
+    width: 250px;
+    height: 140px;
+}
+
+#footer {
+    clear: both;
+    background: #000;
+    color: #fff;
+    bottom: 0;
+}
+.left{
+    display: flex;
+    background-color: yellow;
+    flex-grow:1;
+}

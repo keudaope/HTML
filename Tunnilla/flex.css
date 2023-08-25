@@ -11,7 +11,7 @@ aside {
 }
 
 header {
-    background-color: red;
+    background: linear-gradient(to right,#9796F0,#FBC7D4);
     padding: 20px;
     text-align: center;
 }

@@ -1,0 +1,34 @@
+@import url('https://fonts.googleapis.com/css2?family=Borel&display=swap');
+
+body {
+    width: 1000px;
+    margin: auto;
+}
+p{
+    font-size: 150%;
+    text-align: justify;
+}
+.keskelle{
+    text-align:center;
+}
+h2{
+    background-color: yellow;
+}
+.eka{
+    background-color: lawngreen;
+}
+.toka{
+    background-color: aquamarine;
+}
+#kolmas{
+    color:blue;
+}
+li:first-child{
+    color:red;
+}
+li:last-child{
+    color: yellow;
+}
+li:nth-child(2n+2){
+    color: blue;
+}
