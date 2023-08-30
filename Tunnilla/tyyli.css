@@ -58,7 +58,7 @@ h3 {
     padding: 10px 0 0 10px;
 }
 
-aside   §article {
+aside article {
     width: 200px;
     background: #8592ED;
     color: #fff;
@@ -73,3 +73,6 @@ footer {
     footer p {
         padding: 10px 0 0 10px;
     }
+img#wing{
+    height: 20%;
+}

@@ -47,3 +47,78 @@ header{
     width: 100%;
     padding-top: 20px;
 }
+#sisalto{
+    display: flex;
+}
+section{
+    background-color:antiquewhite;
+}
+section article img {
+    float: left;
+    display: inline-block;
+    width: 10%;
+    padding: 20px;
+}
+section article h1 {
+    font-family: 'Sedgwick Ave Display', cursive;
+    font-size: 2em;
+    margin-top: 10px;
+}
+section article{
+    width: 70%;
+    float: left;
+    padding: 20px;
+}
+section aside{
+    width: 30%;
+    float: right;
+    background-color:aquamarine;
+    padding: 20px;
+    border-radius: 20px;
+    margin-right: 10px;
+}
+aside h2{
+    font-size: 1.5em;
+    text-align: center;
+}
+aside img{
+    width: 100%;
+}
+hr{
+    border-top: 5px gray solid;
+}
+main img#alas{
+    width: 5%;
+    margin-top: -20px;
+    padding-left: 347px;
+}
+footer {
+    display: flex;
+}
+footer article{
+    width: 33%;
+    
+}
+footer article img{
+    width: 40%;
+    float: left;
+    margin: 0;
+    padding: 0;
+    padding-right: 10px;
+}
+footer h3{
+    padding: 0;
+    margin: 0;
+}
+ul {
+    padding: 0;
+    margin: 0;
+}
+ul li{
+list-style-type: none;
+    
+}
+li a {
+    color: magenta;
+
+}
