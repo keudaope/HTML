@@ -34,3 +34,6 @@ input[name='HTML']
 	margin-left: 3px;
 
 }
+form{
+	padding-bottom: 20px;
+}
