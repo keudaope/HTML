@@ -4,6 +4,8 @@ body{
 }
 main {
 	box-shadow: 10px 5px 5px gray, -.4em 0 .4em black;
+	margin-bottom: 50px;
+	background-color: cornsilk;
 }
 h1{
 	padding: 20px 0px 0px 20px;
@@ -22,18 +24,28 @@ input[type='text'], input[type='email'] {
 	border: 1px solid #CCC;
 	border-radius: 5px;
 }
-label[for='HTML'], label[for='CSS'], label[for='JavaScript']{
+label[for='HTML'], label[for='CSS'], label[for='JavaScript'], label[for='itse'], label[for='yritys'], label[for='lahjakortti']{
 	font-weight: 100;
 	margin-top: -10px;
 }
-input[type='checkbox']{
+input[type='checkbox'], input[type='radio'], textarea{
 	margin-left:327px;
 }
-input[name='HTML']
+input[name='HTML'], input[id='itse']
 {
 	margin-left: 3px;
 
 }
 form{
 	padding-bottom: 20px;
+}
+select{
+	font-size: 1.5em;
+}
+button{
+	width: 200px;
+	padding: 10px;
+	border-radius: 10px;
+	background-color: lightgreen;
+	margin-left: 325px;
 }
