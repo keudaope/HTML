@@ -3,7 +3,7 @@ body{
 	margin: 0 auto;
 	background-image: url('keuda.png');
 	background-repeat: repeat;
-	background-color: rgba(1, 1, 1, 0.7);
+	background-color: rgba(1, 1, 1, 0.2);
 }
 main {
 	box-shadow: 10px 5px 5px gray, -.4em 0 .4em black;
