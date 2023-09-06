@@ -1,5 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Borel&family=Caveat&family=Dancing+Script&family=Sedgwick+Ave+Display&display=swap');
 body{
-    width: 800px;
+    width: 1200px;
     margin: 0 auto;
     text-align: center;
 }
@@ -11,6 +12,8 @@ img{
     width: 100%;
     padding-top: 20px;
 }
-#tribute-link {
-    margin-bottom: 20px;
+p {
+    text-align: left;
+    font-family: 'Borel', cursive;
+    font-size: 1em;
 }
