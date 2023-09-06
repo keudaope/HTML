@@ -1,0 +1,43 @@
+body, html {
+    height: 100%;
+}
+
+.p1, .p2, .p3, .p4, .parallax {
+    
+    /* Full height */
+    height: 100%;
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.p1 {
+    background-image: url("../kuvat/bg1.jpg");
+}
+.p2 {
+    background-image: url("../kuvat/bg2.jpg");
+}
+.p3 {
+    background-image: url("../kuvat/bg3.jpg");
+}
+.p4 {
+    background-image: url("../kuvat/bg4.jpg");
+}
+.s1, .s2, .s3, .s4 {
+    height:200px;
+    font-size:36px;
+    padding: 20px;
+}
+.s1 {
+    background-color: red;
+}
+.s2 {
+    background-color: yellow;
+}
+.s3 {
+    background-color: blue;
+}
+.s4 {
+    background-color: greenyellow;
+}
