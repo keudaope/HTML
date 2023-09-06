@@ -1,0 +1,16 @@
+body{
+    width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+main{
+    background-color: lightgoldenrodyellow;
+    padding:0 20px 20px 20px;
+}
+img{
+    width: 100%;
+    padding-top: 20px;
+}
+#tribute-link {
+    margin-bottom: 20px;
+}
