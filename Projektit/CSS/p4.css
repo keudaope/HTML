@@ -1,0 +1,41 @@
+body{
+    width: 800px;
+    margin: 0 auto;
+}
+main {
+    background-color: antiquewhite;
+    padding: 20px;
+    box-shadow: 10px 5px 5px gray, -.4em 0 .4em black;
+    margin: 10px;
+}
+label {
+    display: inline-block;
+    width: 300px;
+    font-weight: bold;
+    padding-top: 10px;
+    padding-left: 20px;
+    font-size: 1.5em;
+}
+input[type="text"], input[type="email"], input[type="tel"]{
+    font-size: 1.5em;
+    border-radius: 30px;
+}
+input[type="date"]{
+    font-size: 1.5em;
+}
+i{
+    font-size: 1.5em;
+}
+.sivuun{
+    margin-left: 328px;
+}
+#lisa {
+    margin: 0;
+    position: absolute;
+    padding-top: 0px;
+}
+button{
+    border-radius: 15px;
+    font-size: 1.5em;
+    background-color:aquamarine;
+}
