@@ -13,16 +13,17 @@ img {
     clear: both;
     float: right;
 }
-table {
+*/table {
     border: 1px solid black;
     Vasta tehtävästä 13 -  border-collapse: collapse;
 }
+/*
 th, td {
     text-align: left;
     padding: 0px 10px;
     border: 1px solid black;
 }
- 
+
 th{
     background-color: #F00000;
 }
