@@ -1,7 +1,9 @@
 img {
-    clear: both;
-    float: left;
- /*   margin: 10px;*/
+  clear: both;
+  float: left;
+  margin-right: 20px;
+  width: 200px;
+  /*   margin: 10px;*/
 }
 /*body{
     font-size: 24px;
@@ -15,7 +17,7 @@ img {
 }
 */table {
     border: 1px solid black;
-    Vasta tehtävästä 13 -  border-collapse: collapse;
+    Vasta tehtï¿½vï¿½stï¿½ 13 -  border-collapse: collapse;
 }
 /*
 th, td {
