@@ -1,47 +1,47 @@
 /*--------------------
         Yleinen
 ---------------------*/
-/* box-sizing: border-box sis‰llytt‰‰ margin ja padding -komennot
-laatikon sis‰‰n, eli laatikko ei kasva, vaikka em. komentoja k‰ytt‰isi,
-niinkuin tapahtuu, jos box-sizing komentoa ei k‰yt‰.
+/* box-sizing: border-box sis√§llytt√§√§ margin ja padding -komennot
+laatikon sis√§√§n, eli laatikko ei kasva, vaikka em. komentoja k√§ytt√§isi,
+niinkuin tapahtuu, jos box-sizing komentoa ei k√§yt√§.
 Kts. https://www.w3schools.com/css/css3_box-sizing.asp */
 @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
 
 * {
     box-sizing: border-box;
 }
-/* Merkkilajin m‰‰ritys seuraavasti:
+/* Merkkilajin m√§√§ritys seuraavasti:
 - font-family tarkoittaa valittua merkkilajia
 - font-size fontin kokoa
-- line-heigth rivi v‰li‰
+- line-heigth rivi v√§li√§
 - em tarkoittaa suhteessa fontin kokoon
-Kts. lis‰‰ https://www.w3schools.com/cssref/css_units.asp */
+Kts. lis√§√§ https://www.w3schools.com/cssref/css_units.asp */
 
 body {
     font-family: 'Lato', sans-serif;
     font-size: 16px;
     line-height: 1.5em;
 }
-/* Tehty koko bodyn kokoinen sis‰ltˆ"laatikko", jonka id = container
-eli jos HTML5 komennot eiv‰t riit‰, div-komennolla saadaan tehty‰ omia
-block-elementtej‰
-Katso lis‰‰: https://www.w3schools.com/tags/tag_div.ASP
+/* Tehty koko bodyn kokoinen sis√§lt√§"laatikko", jonka id = container
+eli jos HTML5 komennot eiv√§t riit√§, div-komennolla saadaan tehty√§ omia
+block-elementtej√§
+Katso lis√§√§: https://www.w3schools.com/tags/tag_div.ASP
 
-display:table -komennolla voidaan m‰‰ritell‰, ett‰ block-elementit
-k‰ytt‰ytyv‰t kuin table
+display:table -komennolla voidaan m√§√§ritell√§, ett√§ block-elementit
+k√§ytt√§ytyv√§t kuin table
 Kts. https://www.w3schools.com/cssref/pr_class_display.asp
 
-Leveyden voi myˆs m‰‰ritt‰‰ suhteellisesti, eli prosenteina, jolloin leveys
-suhtautuu koko sivuun automaattisesti, jos katsellaan eri kokoisilta n‰ytˆilt‰
+Leveyden voi my√§s m√§√§ritt√§√§ suhteellisesti, eli prosenteina, jolloin leveys
+suhtautuu koko sivuun automaattisesti, jos katsellaan eri kokoisilta n√§yt√§ilt√§
 Kts. https://www.w3schools.com/cssref/pr_dim_width.asp
 
-marginaalin voi m‰‰ritt‰‰ autoksi, jolloin alla olevassa tapauksessa sivu
-keskittyy vaakatasossa ja yl‰- ja alamarginaali on 10px
+marginaalin voi m√§√§ritt√§√§ autoksi, jolloin alla olevassa tapauksessa sivu
+keskittyy vaakatasossa ja yl√§- ja alamarginaali on 10px
 Kts. https://www.w3schools.com/css/css_margin.asp
 
-overflow-komento m‰‰rittelee, mit‰ tapahtuu, jos sis‰ltˆ ei mahdu sille
-m‰‰r‰ttyyn blockiin, eli k‰yt‰nnˆss‰, tuleeko scrollbars n‰kyviin. auto
-tarkoittaa sit‰, ett‰ tulevat tarvittaessa n‰kyviin
+overflow-komento m√§√§rittelee, mit√§ tapahtuu, jos sis√§lt√§ ei mahdu sille
+m√§√§r√§ttyyn blockiin, eli k√§yt√§nn√§ss√§, tuleeko scrollbars n√§kyviin. auto
+tarkoittaa sit√§, ett√§ tulevat tarvittaessa n√§kyviin
 Kts. https://www.w3schools.com/css/css_overflow.asp*/
 main {
     display: table;
@@ -50,14 +50,14 @@ main {
     overflow: auto;
     background: #FFF;
 }
-/* N‰m‰ selitetty ylemmp‰n‰ */
+/* N√§m√§ selitetty ylemmp√§n√§ */
 p {
     margin: 10px 0;
     line-height: 1.5em;
 }
-/* text-transform: capitalize tarkoittaa sit‰, ett‰ riippumatta, miten
-teksti on kirjoitettu h1-t‰gien sis‰‰n, tekstin ensimm‰inen kirjain
-kirjoitetaan isoilla kirjaimilla, muut selitetty ylemp‰n‰
+/* text-transform: capitalize tarkoittaa sit√§, ett√§ riippumatta, miten
+teksti on kirjoitettu h1-t√§gien sis√§√§n, tekstin ensimm√§inen kirjain
+kirjoitetaan isoilla kirjaimilla, muut selitetty ylemp√§n√§
 Kts. https://www.w3schools.com/cssref/pr_text_text-transform.asp */
 h1 {
     font-family: 'Courgette', cursive;
@@ -88,16 +88,16 @@ h4 {
 strong {
     font-weight: bold;
 }
-/* clearfix -luokalla m‰‰ritet‰‰n, miten kellutus tapahtuu "oikein", eli
-jos kuva on suurempi kuin tekstilaatikko, ilman t‰t‰ se "valuisi" tekstilaatikon
-ulkopuolelle, mutta t‰ll‰ voidaan m‰‰ritt‰‰, ett‰ se pysyy laatikossa.
-:before ja :after tarkoittavat sit‰ mit‰ sanovatkin, eli ennen ja j‰lkeen
+/* clearfix -luokalla m√§√§ritet√§√§n, miten kellutus tapahtuu "oikein", eli
+jos kuva on suurempi kuin tekstilaatikko, ilman t√§t√§ se "valuisi" tekstilaatikon
+ulkopuolelle, mutta t√§ll√§ voidaan m√§√§ritt√§√§, ett√§ se pysyy laatikossa.
+:before ja :after tarkoittavat sit√§ mit√§ sanovatkin, eli ennen ja j√§lkeen
 Kts. https://www.w3schools.com/howto/howto_css_clearfix.asp
 
-content-komennolla voidaan m‰‰ritt‰‰ sis‰ltˆ
+content-komennolla voidaan m√§√§ritt√§√§ sis√§lt√§
 Kts. https://www.w3schools.com/cssref/pr_gen_content.asp
 
-display: table selitettiin jo ylemp‰n‰*/
+display: table selitettiin jo ylemp√§n√§*/
 
 .clearfix:before, .clearfix:after {
     content: ' ';
@@ -127,13 +127,13 @@ Kts. https://www.w3schools.com/cssref/pr_class_clear.asp */
 /*-------------------
       HEADER-block
 ---------------------*/
-/* Laitetaan kuvan ja otsikoiden v‰liin sininen 7px viiva */
+/* Laitetaan kuvan ja otsikoiden v√§liin sininen 7px viiva */
 
 header {
     border-bottom: 7px solid #4EA0D9;
 }
 
-/* M‰‰ritet‰‰n logo block-elementiksi ja keskitet‰‰n se */
+/* M√§√§ritet√§√§n logo block-elementiksi ja keskitet√§√§n se */
 
 #logo {
     display: block;
@@ -153,37 +153,37 @@ header {
       columns elementit
 --------------------------*/
 
-/* Kellutetaan id:left-col vasemmalle ja m‰‰ritet‰‰n sen leveys suhteellisena */
+/* Kellutetaan id:left-col vasemmalle ja m√§√§ritet√§√§n sen leveys suhteellisena */
 
 #left {
     float: left;
     width: 48%;
 }
 
-    /* m‰‰ritet‰‰n left-col-id:n sis‰ll‰ olevan points-luokan li-elementti */
+    /* m√§√§ritet√§√§n left-col-id:n sis√§ll√§ olevan points-luokan li-elementti */
 
     #left ul li {
         margin-bottom: 30px;
     }
 
-    /* m‰‰ritet‰‰n left-col-id:n sis‰ll‰ olevan points-luokan img-elementti */
+    /* m√§√§ritet√§√§n left-col-id:n sis√§ll√§ olevan points-luokan img-elementti */
     #left ul img {
         float: left;
         margin-right: 10px;
     }
 
-    /* m‰‰ritet‰‰n left-col-id:n sis‰ll‰ olevan points-luokan h4-block */
+    /* m√§√§ritet√§√§n left-col-id:n sis√§ll√§ olevan points-luokan h4-block */
     #left ul h4 {
         padding-top: 5px;
     }
 
-/* Kellutetaan right-col-id oikealle ja m‰‰ritet‰‰n sen leveys suhteellisena */
+/* Kellutetaan right-col-id oikealle ja m√§√§ritet√§√§n sen leveys suhteellisena */
 #right {
     float: right;
     width: 48%;
 }
 
-/* border-radius m‰‰ritt‰‰ kulmien pyˆreyden */
+/* border-radius m√§√§ritt√§√§ kulmien py√§reyden */
 #contact-form {
     padding: 30px 20px 20px 20px;
     border: 4px solid #4EA0D8;
@@ -202,7 +202,7 @@ header {
         font-weight: bold;
     }
 
-    /* m‰‰ritet‰‰n contact-form-id:n sis‰ll‰ olevan text- ja email-input tyypit*/
+    /* m√§√§ritet√§√§n contact-form-id:n sis√§ll√§ olevan text- ja email-input tyypit*/
     #contact-form input[type='text'],
     #contact-form input[type='email'] {
         height: 25px;
@@ -210,7 +210,7 @@ header {
         border: 1px solid #CCC;
         border-radius: 5px;
     }
-    /* m‰‰ritet‰‰n contact-form-id:n sis‰ll‰ oleva submit-input-tyyppi */
+    /* m√§√§ritet√§√§n contact-form-id:n sis√§ll√§ oleva submit-input-tyyppi */
     #contact-form input[type='submit'] {
         display: block;
         float: right;
@@ -220,8 +220,8 @@ header {
         border: 0;
         border-radius: 5px;
     }
-        /* m‰‰ritet‰‰n contact-form-id:n sis‰ll‰ oleva submit-input-tyypin toiminta
-silloin, kun sit‰ osoittaa hiirell‰ (hover)
+        /* m√§√§ritet√§√§n contact-form-id:n sis√§ll√§ oleva submit-input-tyypin toiminta
+silloin, kun sit√§ osoittaa hiirell√§ (hover)
 Kts. https://www.w3schools.com/cssref/sel_hover.asp
 
 Muutetaan osoitin erilaiseksi - cursor: pointer
@@ -275,7 +275,7 @@ Kts. https://www.w3schools.com/cssref/pr_class_cursor.asp */
       Responsiivisuus
 -------------------------*/
 
-/* N‰ytˆt, joiden maksimileveys on 1023px */
+/* N√§yt√§t, joiden maksimileveys on 1023px */
 @media (max-width:1023px) {
     #container {
         width: 80%;
@@ -309,7 +309,7 @@ Kts. https://www.w3schools.com/cssref/pr_class_cursor.asp */
         float: none;
     }
 }
-/* N‰ytˆt, joiden maksimileveys on 799px */
+/* N√§yt√§t, joiden maksimileveys on 799px */
 @media (max-width: 799px) {
 
     h2 {
@@ -335,7 +335,7 @@ Kts. https://www.w3schools.com/cssref/pr_class_cursor.asp */
         padding: 20px 30px 30px 30px;
     }
 }
-/* N‰ytˆt, joiden maksimileveys on 479px */
+/* N√§yt√§t, joiden maksimileveys on 479px */
 @media (min-width: 479px) {
     h1 {
         font-size: 1.6em;
