@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        border: 0;
+        position: relative;
+        border: 0;
+      }
+
+      html,
+      body {
+        height: 100%;
+      }
+
+      #mover {
+        display: block;
+        width: 100px;
+        height: 100px;
+        cursor: pointer;
+        position: absolute;
+      }
+
+      .bg {
+        width: 100%;
+        height: 100%;
+        background-image: -webkit-gradient(
+          linear,
+          left top,
+          left bottom,
+          from(#ff0000),
+          to(#0000ff)
+        );
+        background-image: -webkit-linear-gradient(top, #ff0000, #0000ff);
+        background-image: -moz-linear-gradient(top, #ff0000, #0000ff);
+        background-image: -o-linear-gradient(top, #ff0000, #0000ff);
+        background-image: linear-gradient(to bottom, #ff0000, #0000ff);
+        filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr=#FF0000, endColorstr=#0000FF);
+        -ms-filter: "progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr=#FF0000, endColorstr=#0000FF)";
+      }
+    </style>
+  </head>
+  <body>
+    <div id="mover">
+      <div class="bg"></div>
+    </div>
+
+    <script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+    <script src="feature-detector-min.js"></script>
+    <script src="mover-min.js"></script>
+    <script>
+      var mover = new atirip.mover(),
+        node = document.getElementById("mover"),
+        pos = mover.getXY(node);
+
+      // just set simply top, left
+      mover.setXY(node, {
+        top: 100,
+        left: 700,
+      });
+
+      // with JS animation
+      mover.setXY(node, {
+        noTransform: true,
+        top: 0,
+        left: 0,
+        time: 1000,
+        easing: "ease-out",
+        success: function () {
+          // with jQuery Deferred and CSS transitions
+          $ &&
+            $.when(
+              mover.setXY(node, {
+                flatten: 1,
+                deferred: true,
+                top: 100,
+                left: 700,
+                time: 1000,
+                easing: "ease-out",
+                round: true,
+              })
+            ).always(function () {
+              alert("done");
+            });
+        },
+      });
+
+      // this will fail as we are in the move when arriving here
+      $ &&
+        $.when(
+          mover.setXY(node, {
+            top: 0,
+            left: 0,
+            deferred: true,
+          })
+        ).fail(function () {
+          // console.log('failed');
+        });
+    </script>
+  </body>
+</html>
