@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Moniharjoitus.html</title>
+    <style>
+      body {
+        background-color: bisque;
+        margin: auto;
+        width: 55%;
+      }
+      img {
+        float: none;
+      }
+      form {
+        background-color: cyan;
+        width: 68%;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Otsikko -->
+    <h1>Harjoittelen HTML:n kirjoittamista</h1>
+    <!-- Kappaleteksti -->
+    <p>Tässä tehtävässä harjoittelen erilaisia HTML-komentoja</p>
+    <!-- Toisen tason otsikko-->
+    <h2>Linkit</h2>
+    <!-- Linkit yleisiin palveluihin -->
+    <a href="https://www.keuda.fi">Keudan kotisivu</a>
+    <a href="https://www.hs.fi">Helsingin Sanomat</a>
+    <a href="https://yle.fi">Ylen pääsivu</a>
+    <!-- Toisen tason otsikko -->
+    <h2>Kuvat</h2>
+    <img src="kissa.jpg" alt="kissan kuva" width="200px" />
+    <img src="kissa2.webp" alt="kissan kuva" width="200px" />
+    <img src="kissa3.avif" alt="kissan kuva" width="200px" />
+    <h2>Lomakkeet</h2>
+
+    <article>
+      <h2>Listat</h2>
+      <h3>Järjestäytymätön lista ja sen sisällä toinen</h3>
+      <ul>
+        <li>Ammatilliset aineet</li>
+        <ul>
+          <li>Ohjelmointi</li>
+          <li>Ohjelmistokehittäjänä toimiminen</li>
+        </ul>
+        <li>YTO-aineet</li>
+        <ul>
+          <li>Kielikori</li>
+          <ul>
+            <li>Englanti</li>
+            <li>Suomi</li>
+            <li>Ruotsi</li>
+          </ul>
+          <li>Matematiikkakori</li>
+          <ul>
+            <li>Matematiikka</li>
+            <li>Fysiikka ja Kemia</li>
+          </ul>
+        </ul>
+      </ul>
+      <h2>Taulukot</h2>
+      <table border="1">
+        <tr>
+          <th></th>
+          <th>Maanantai</th>
+          <th>Tiistai</th>
+          <th>Keskiviikko</th>
+          <th>Torstai</th>
+          <th>Perjantai</th>
+        </tr>
+        <tr>
+          <td>Aamupäivä</td>
+          <td>Ohjelmointi</td>
+          <td></td>
+          <td>Ohjelmointi</td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>iltapäivä</td>
+          <td>Ohjelmointi</td>
+          <td></td>
+          <td>Ohjelmointi</td>
+          <td>Ohjelmointi</td>
+          <td></td>
+        </tr>
+      </table>
+    </article>
+   <p><form action="">
+      <fieldset>
+        <legend>Kyselylomake</legend>
+        <label for="etunimi">Etunimi</label>
+        <input type="text" id="etunimi" value="Jyri" />
+        <label for="sukunimi">Sukunimi</label>
+        <input type="text" id="sukunimi" value="Lindroos" /><br />
+        <label for="suosikki">Valitse suosikkioppiaineesi</label>
+        <select name="aine" id="aine">
+          <option value="Ohjelmointi">Ohjelmointi</option>
+          <option value="YTO-aineet">YTO-aineet</option>
+          <option value="TVT-perusteet">TVT-perusteet</option>
+          <option value="Teknisessä tukipalvelussa toimiminen"></option>
+        </select><br />
+        <label for="Millä tulin">Tulin kouluun:</label><br />
+        <input type="radio" name="tulin">Junalla
+        <input type="radio" name="tulin">Bussilla
+        <input type="radio" name="tulin">Autolla
+        <input type="radio" name="tulin">Kävellen <br />
+        <label for="ruokailu">Syön kouluruokalassa</label><br />
+        <input type="checkbox">Päivittäin
+        <input type="checkbox">2-3 kertaa viikossa<br />
+        <input type="checkbox">harvemmin
+        <input type="checkbox">En syö ruokalassa
+      </fieldset>
+    </form></p>
+  </body>
+</html>
