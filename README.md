@@ -1,2 +1,1 @@
-# HTML
-HTML-harjoitusten repositio
+# HTMLx
