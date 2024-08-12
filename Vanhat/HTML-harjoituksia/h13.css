@@ -1,0 +1,38 @@
+img {
+    clear: both;
+    float: left;
+    margin-right: 20px;
+    width: 200px;
+    /*   margin: 10px;*/
+  }
+  /*body{
+      font-size: 24px;
+  }
+  #eka{
+      float: left;
+  }
+  #toka{
+      clear: both;
+      float: right;
+  }
+  */table {
+      border: 1px solid black;
+      border-collapse: collapse;
+  }
+  
+  th, td {
+      text-align: left;
+      padding: 0px 10px;
+      border: 1px solid black;
+  }
+  /*
+  th{
+      background-color: #F00000;
+  }
+  tr:nth-child(odd) {
+      background-color: #FFF000;
+  }
+  tr:nth-child(even) {
+      background-color: #FFFFF0;
+  } */
+  
