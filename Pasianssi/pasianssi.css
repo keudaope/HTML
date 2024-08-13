@@ -1,0 +1,40 @@
+body {
+  background-color: #aa7d39;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin: 1% 5%;
+  line-height: 150%;
+}
+h1 {
+  margin: 1.5em 1em;
+}
+.navigointipalkki ul {
+  list-style-type: none;
+  background-color: #ffc123;
+  overflow: hidden;
+}
+.navigointipalkki li {
+  float: left;
+}
+.navigointipalkki a {
+  padding: 0 40px;
+  color: white;
+  text-decoration: none;
+}
+.navigointipalkki a:hover {
+  background-color: #19171e;
+}
+.kuva {
+  float: left;
+  margin: 0 20px;
+}
+.video {
+  width: 512px;
+  height: 288px;
+  float: left;
+  position: relative;
+  padding: 0px;
+  margin: 20px;
+}
+.vieraskirja {
+  text-align: center;
+}
