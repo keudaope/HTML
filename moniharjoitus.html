@@ -32,63 +32,92 @@
     <a href="https://yle.fi">Ylen pääsivu</a>
     <!-- Toisen tason otsikko -->
     <h2>Kuvat</h2>
+    <!-- Kuvien lisääminen ja niiden koon muuttaminen-->
     <img src="kissa.jpg" alt="kissan kuva" width="200px" />
     <img src="kissa2.webp" alt="kissan kuva" width="200px" />
     <img src="kissa3.avif" alt="kissan kuva" width="200px" />
-    <h2>Lomakkeet</h2>
+
 
     <article>
       <h2>Listat</h2>
       <h3>Järjestäytymätön lista ja sen sisällä toinen</h3>
+      <!-- Tästä alkaa järjestäytymätön lista-->
       <ul>
+        <!-- Tässä ensimmäisen tason listan jäsen-->
         <li>Ammatilliset aineet</li>
+        <!-- Tästä alkaa toisen tason lista -->
         <ul>
+          <!-- Toisen tason listan jäsenet-->
           <li>Ohjelmointi</li>
           <li>Ohjelmistokehittäjänä toimiminen</li>
         </ul>
+        <!-- Ensimmäisen tason 2. listan jäsen-->
         <li>YTO-aineet</li>
+        <!-- Tästä alkaa toinen toisen tason lista-->
         <ul>
+          <!-- Toisen tason listan jäsen-->
           <li>Kielikori</li>
+          <!-- Tästä alkaa kolmannen tason lista -->
           <ul>
+            <!-- Kolmannen tason listan jäsenet -->
             <li>Englanti</li>
             <li>Suomi</li>
             <li>Ruotsi</li>
           </ul>
+          <!-- toinen toisen tason listan jäsen-->
           <li>Matematiikkakori</li>
+          <!-- Tästä alkaa uusi kolmannen tason lista-->
           <ul>
+            <!-- Kolmannen tason listan jäsenet-->
             <li>Matematiikka</li>
             <li>Fysiikka ja Kemia</li>
           </ul>
         </ul>
       </ul>
       <h2>Taulukot</h2>
+      <!-- Taulukko aloitetaan table komennolla. optio border="1" piirtää reunukset-->
       <table border="1">
+        <!-- Taulukko rakennetaan riveittäin vasemmalta oikealle. tr = table row-->
         <tr>
+          <!-- Jos taulukkoon halutaan otsikot, ne tehdään th-tägillä (table header)
+           HUOMAA, että ensiksi täytetään 1. rivi, sitten vasta mennään toiseen riviin
+           Tämä kyseinen sarake on tyhjä, joten se pitää merkitä -->          
           <th></th>
           <th>Maanantai</th>
           <th>Tiistai</th>
           <th>Keskiviikko</th>
           <th>Torstai</th>
           <th>Perjantai</th>
+          <!-- ensimmäinen rivi päättyy tähän-->
         </tr>
+        <!-- Tästä alkaa toinen rivi -->
         <tr>
+          <!-- Tästä alkaa 2. rivin sisältö-->
           <td>Aamupäivä</td>
           <td>Ohjelmointi</td>
+          <!-- Vaikka sarakkeeseen ei tule mitään, se tulee merkitä-->
           <td></td>
           <td>Ohjelmointi</td>
           <td></td>
           <td></td>
+          <!-- toinen rivi päättyy tähän -->
         </tr>
+        <!-- Tästä alkaa kolmas rivi -->
         <tr>
+          <!-- Tästä alkaa kolmannen rivin sisältö -->
           <td>iltapäivä</td>
           <td>Ohjelmointi</td>
+          <!-- Vaikka sarakkeeseen ei tule mitään, se tulee merkitä-->
           <td></td>
           <td>Ohjelmointi</td>
           <td>Ohjelmointi</td>
           <td></td>
+          <!-- Tähän loppuu 3. ja samalla viimeinen rivi-->
         </tr>
+        <!-- Lopetamme vielä taulukon -->
       </table>
     </article>
+    <h2>Lomakkeet</h2>
    <p><form action="">
       <fieldset>
         <legend>Kyselylomake</legend>
