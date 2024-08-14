@@ -3,7 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Selaimen välilehteen tuleva otsikko-->
     <title>Moniharjoitus.html</title>
+    <!-- Tyylitiedosto HTML-tiedoston sisällä - ei suositeltava, mutta voi käyttää -->
     <style>
       body {
         background-color: bisque;
@@ -12,6 +14,7 @@
       }
       img {
         float: none;
+        height: 200px;
       }
       form {
         background-color: cyan;
@@ -32,10 +35,10 @@
     <a href="https://yle.fi">Ylen pääsivu</a>
     <!-- Toisen tason otsikko -->
     <h2>Kuvat</h2>
-    <!-- Kuvien lisääminen ja niiden koon muuttaminen-->
-    <img src="kissa.jpg" alt="kissan kuva" width="200px" />
-    <img src="kissa2.webp" alt="kissan kuva" width="200px" />
-    <img src="kissa3.avif" alt="kissan kuva" width="200px" />
+    <!-- Kuvien lisääminen. Koon muutos style-kohdassa-->
+    <img src="kissa.jpg" alt="kissan kuva"/>
+    <img src="kissa2.webp" alt="kissan kuva" />
+    <img src="kissa3.avif" alt="kissan kuva" />
 
 
     <article>
@@ -118,31 +121,47 @@
       </table>
     </article>
     <h2>Lomakkeet</h2>
+    <!-- Lomakkeet aloitetaan form-komennolla. Älkää vielä välittäkö tuosta action-kohdasta-->
    <p><form action="">
+      <!-- Jos haluamme lomakkeelle reunat, voimme käyttää fieldset-komentoa-->
       <fieldset>
+        <!-- Lomakkeen otsikko tehdään legend-komennolla-->
         <legend>Kyselylomake</legend>
+        <!-- Kenttien selitteet annetaan label-komennolla-->
         <label for="etunimi">Etunimi</label>
+        <!-- tekstikenttä tehdään input-komennolla parametrillä type="text"-->
         <input type="text" id="etunimi" value="Jyri" />
         <label for="sukunimi">Sukunimi</label>
         <input type="text" id="sukunimi" value="Lindroos" /><br />
         <label for="suosikki">Valitse suosikkioppiaineesi</label>
+        <!-- Tiputusvalikko tehdään select-komennolla-->
         <select name="aine" id="aine">
+          <!-- Tiputusvalikon jäsenet tehdään option-komennolla
+           HUOMIOI value-parametri. Se välittyy eteenpäin, kun sitä pyydämme-->
           <option value="Ohjelmointi">Ohjelmointi</option>
           <option value="YTO-aineet">YTO-aineet</option>
           <option value="TVT-perusteet">TVT-perusteet</option>
           <option value="Teknisessä tukipalvelussa toimiminen"></option>
+          <!--Tiputusvalikon lopetus -->
         </select><br />
         <label for="Millä tulin">Tulin kouluun:</label><br />
+        <!-- kun haluamme pallukkavalinnan (vain yksi pallukka voidaan valita)
+         se tapahtuu input type="radio" - parametrillä. HUOMAA, että name-attribuutti
+         pitää olla kaikilla sama (estää siten monivalinnan)-->
         <input type="radio" name="tulin">Junalla
         <input type="radio" name="tulin">Bussilla
         <input type="radio" name="tulin">Autolla
         <input type="radio" name="tulin">Kävellen <br />
         <label for="ruokailu">Syön kouluruokalassa</label><br />
-        <input type="checkbox">Päivittäin
-        <input type="checkbox">2-3 kertaa viikossa<br />
-        <input type="checkbox">harvemmin
-        <input type="checkbox">En syö ruokalassa
+        <!-- kun haluamme valita useita, se tehdään input type="checkbox"-parametrillä
+         Näillä taas name on eri jokaisella-->
+        <input type="checkbox" name="paivittain">Päivittäin
+        <input type="checkbox" name="muutama">2-3 kertaa viikossa<br />
+        <input type="checkbox" name="harvemmin">harvemmin
+        <input type="checkbox" name="en">En syö ruokalassa
+        <!-- Fieldset loppuu tähän -->
       </fieldset>
+      <!-- Lomake loppuu tähän -->
     </form></p>
   </body>
 </html>
