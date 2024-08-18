@@ -1,39 +1,38 @@
-body{
-    width: 80%;
-    margin: 0 auto;
+body {
+  width: 80%;
+  margin: 0 auto;
 }
 main {
-    display: flex;
-    overflow: hidden;
-    background-color: aqua;
-    margin: -20px 0 0 0;
+  display: flex;
+  overflow: hidden;
+  background-color: aqua;
+  margin: -20px 0 0 0;
 }
 
 aside {
-    flex: 1;
-    order: 2;
+  order: 2;
 }
 
 header {
-    background: linear-gradient(to right,#9796F0,#FBC7D4);
-    padding: 20px;
-    text-align: center;
+  background: linear-gradient(to right, #9796f0, #fbc7d4);
+  padding: 20px;
+  text-align: center;
 }
 
 section {
-    width: 70%;
-    order: 1;
-    padding: 20px;
+  width: 70%;
+  order: 1;
+  padding: 20px;
 }
 
 aside {
-    background-color: aquamarine;
-    width: 30%;
-    padding: 20px;
+  background-color: aquamarine;
+  width: 30%;
+  padding: 20px;
 }
 
 footer {
-    background-color: bisque;
-    padding: 20px;
-    text-align: center;
+  background-color: bisque;
+  padding: 20px;
+  text-align: center;
 }
