@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        width: 400px;
+        margin: 0 auto;
+      }
+
+      form {
+        background-color: darkkhaki;
+        padding: 20px;
+      }
+      label {
+        display: inline-block;
+        width: 150px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Etsi asuntoja</h1>
+    </header>
+    <main>
+      <form>
+        <div>
+          <label for="sijainti">Sijainti</label>
+          <input type="text" name="sijainti" id="sijainti" />
+        </div>
+        <br />
+        <div>
+          <label for="hinta">Hinta</label>
+          <input type="range" name="hinta" id="hinta" />
+        </div>
+        <br />
+        <div>
+          <label for="makuuhuoneet">Makuuhuoneet</label>
+          <input type="number" name="makuuhuoneet" id="makuuhuoneet" />
+        </div>
+        <br />
+        <div>
+          <label for="kylpyhuoneet">Kylpyhuoneet</label>
+          <input type="number" name="kylpyhuoneet" id="kylpyhuoneet" />
+        </div>
+        <br />
+        <div>
+          <label for="lemmikit"
+            >Lemmikit
+            <input type="checkbox" name="lemmikit" id="lemmikit" />
+          </label>
+        </div>
+        <br />
+        <div>
+          <label for="paivat">Vapaana lähtien</label>
+          <input type="date" name="date" id="date" />
+        </div>
+        <br />
+        <input type="submit" value="Lähetä" />
+      </form>
+    </main>
+  </body>
+</html>

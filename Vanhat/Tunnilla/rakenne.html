@@ -1,37 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <style>
-        header, aside, article, footer{
-            border: 1px solid black;
-            height: 100px;
-        }
-        header {
-            background-color: burlywood;
-        }
-        
-        aside{
-            float: left;
-            width: 29%;
-            background-color: aqua;
-        }
-        article{
-            float: left;
-            width: 70.7%;
-            background-color: aquamarine;
-        }
-        footer {
-            clear: both;
-        }
+      body {
+        color: #ffaaaa;
+      }
+      .flexcontainer {
+        flex-direction: row;
+        display: flex;
+      }
+      header,
+      footer {
+        border: 1px solid black;
+        width: 100%;
+        height: 100px;
+      }
+
+      header {
+        background-color: #550000;
+      }
+
+      aside {
+        width: 30%;
+        height: 100px;
+        background-color: #aa3939;
+      }
+      article {
+        width: 70%;
+        height: 100px;
+        background-color: #801515;
+      }
+      footer {
+        clear: both;
+        background-color: #550000;
+      }
     </style>
-</head>
-<body>
-    <header></header>
-    <aside></aside>
-    <article></article>
-    <footer></footer>
-</body>
+  </head>
+  <body>
+    <header><h1>HEADER</h1></header>
+    <div class="flexcontainer">
+      <article><p>Artikkeli</p></article>
+      <aside><p>Sivupalkki</p></aside>
+    </div>
+
+    <footer><p>Footer</p></footer>
+  </body>
 </html>

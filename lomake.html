@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        width: 450px;
+        margin: 0 auto;
+      }
+      form {
+        background-color: antiquewhite;
+        padding: 5px 20px;
+        height: 650px;
+      }
+      label {
+        display: block;
+        width: 10em;
+        float: left; /* makes the element act like inline block */
+        clear: left; /* clears any left floats so before so this should start on new line */
+      }
+      input,
+      textarea,
+      select {
+        width: 10em;
+        float: left;
+      }
+      .cb,
+      .rb {
+        margin-left: 10em;
+        margin-right: -100px;
+      }
+      input[type="submit"] {
+        margin-left: 12em;
+        width: 140px;
+      }
+    </style>
+  </head>
+  <body>
+    <form>
+      <h1>Syöttölomake</h1>
+      <!-- Tekstin syöttö-->
+      <label for="nimi">Nimi:</label>
+      <input type="text" id="nimi" />
+      <!-- Sähköpostin syöttö -->
+      <label for="email">Sähköposti:</label>
+      <input type="email" id="email" />
+      <!-- Salasanan syöttö -->
+      <label for="password">Salasana:</label>
+      <input type="password" id="password" />
+      <!-- Numeron syöttö -->
+      <label for="number">Numero:</label>
+      <input type="number" id="number" />
+      <!-- Tekstialueen syöttö -->
+      <label for="textarea">Tekstialue: </label>
+      <textarea id="textarea" cols="10" rows="10"></textarea>
+      <!-- Pudotusvalikon syöttö -->
+      <label for="dropdown">Pudotusvalikko:</label>
+      <select id="autot">
+        <option value="Audi">Audi</option>
+        <option value="Alfaromeo">Alfaromeo</option>
+        <option value="BMW">BMW</option>
+        <option value="Byd">Byd</option>
+        <option value="Citroen">Citroën</option>
+        <option value="Cupra">Cupra</option>
+      </select>
+      <!-- Monivalinnan syöttö -->
+      <label for="osaan">Osaan:</label>
+      <label for="checkbox" class="cb">HTML</label>
+      <input type="checkbox" id="HTML" />
+      <label for="checkbox" class="cb">CSS</label>
+      <input type="checkbox" id="CSS" />
+      <label for="checkbox" class="cb">JavaScript</label>
+      <input type="checkbox" id="JavaScript" />
+      <!-- Yhden valinnan syöttö -->
+      <label for="syonKoulussa">Syön koulussa:</label>
+      <label for="syon" class="rb">Syön</label>
+      <input type="radio" id="syon" name="syo" />
+      <label for="enSyo" class="rb">En syö</label>
+      <input type="radio" id="enSyo" name="syo" />
+      <!-- Värivalitsin -->
+      <label for="color">Väri</label>
+      <input type="color" id="color" />
+      <!-- Päivämäärävalitsin -->
+      <label for="date">Päivämäärä</label>
+      <input type="date" id="Distance" />
+      <!-- Viikkovalitsin -->
+      <label for="week">Viikko</label>
+      <input type="week" id="week" />
+      <!-- Kuukausivalitsin -->
+      <label for="month">Kuukausi</label>
+      <input type="month" id="month" />
+      <!-- Liukuvalitsin -->
+      <label for="range">Liukuvalitsin</label>
+      <input type="range" id="range" />
+      <!-- URLin syöttö -->
+      <label for="URL">URL</label>
+      <input type="url" id="url" />
+      <input type="submit" value="Lähetä" />
+    </form>
+  </body>
+</html>
