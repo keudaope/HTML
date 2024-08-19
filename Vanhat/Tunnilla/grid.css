@@ -1,25 +1,35 @@
+html,
+body,
 .grid-container {
+  height: 100%;
+  margin: 0;
+}
+
+.grid-container * {
+  border: 1px solid red;
+  position: relative;
+}
+
+.grid-container {
+  display: grid;
+ 
+}
+header{
+    height: 10%;
+}
+main {
     display: grid;
-    grid-template-columns: 1fr 40em 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    grid-template-areas:
-      " . header . "
-      " . content . "
-      " . footer . ";
-  }
-  
-  .header {
-    grid-area: header;
-  }
-  
-  .content {
-    grid-area: content;
-  }
-  
-  .footer {
-    grid-area: footer;
-  }
-  
-  .header, .content, .footer {
-    border: 1px solid red;
-  }
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+}
+article:first-child{
+    grid-column: span 5;
+}
+
+li{
+    list-style-type: none;
+}
+a {
+    text-decoration: none;
+    float: left;
+    padding-right: 40px;
+}
