@@ -6,7 +6,6 @@ main {
   display: flex;
   overflow: hidden;
   background-color: aqua;
-  margin: -20px 0 0 0;
 }
 
 aside {
@@ -30,7 +29,9 @@ aside {
   width: 30%;
   padding: 20px;
 }
-
+article{
+  background-color: #f67e86;
+}
 footer {
   background-color: bisque;
   padding: 20px;
