@@ -14,10 +14,25 @@ aside {
 
 header {
   background: linear-gradient(to right, #9796f0, #fbc7d4);
-  padding: 20px;
+  padding: 30px;
   text-align: center;
 }
-
+nav{
+  width: 700px;
+  margin: 0 auto;
+}
+nav ul{
+  list-style-type: none;
+}
+nav ul a{
+  text-decoration: none;
+  color: black;
+  float: left;
+  margin: 0 40px;
+}
+.koirat {
+  width: 100%;
+}
 section {
   width: 70%;
   order: 1;
@@ -29,9 +44,7 @@ aside {
   width: 30%;
   padding: 20px;
 }
-article{
-  background-color: #f67e86;
-}
+
 footer {
   background-color: bisque;
   padding: 20px;

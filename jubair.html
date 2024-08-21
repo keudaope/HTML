@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>täyttölomake</title>
+    <link rel="stylesheet" href="autolomakke.css">
+    <style>
+        body {
+            width: 450px;
+            margin: 0 auto;
+        }
+        form {
+            background-color: rgb(63, 214, 219);
+            padding: 5px 20px;
+            height: 700px;
+        }
+        label {
+            display: block;
+            width: 10em;
+            float:  left;
+            clear: left;
+        }
+        input,
+        textarea,
+        select {
+            width: 10em;
+            float: left;
+
+        }
+        .cb,
+        .rb {
+            margin-left: 10em;
+            margin-right: -100px;
+        }
+
+        input[type="submit"] {
+        margin-left:12em;
+        width: 140px ;
+        }
+        .alas {
+            top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <form>
+       <h1>syöttölomake</h1>
+    <!-- tekstin syöttö-->
+     <label for="nimi">etunimi</label>
+     <input type="text" id="nimi" />
+     <label for="sukunimi">sukunimi</label>
+     <input type="text" id="sukunimi" />
+     <!--sähköposti-->
+     <label for="email">sähköposti: </label>
+     <input type="email" id="email" />
+     <!--password-->
+     <label for="password">salasana:</label>
+     <input type="password" id="password" />
+     <!--numbers-->
+     <label for="number">numero:</label>
+     <input type="number" id="number" />
+     <!--texxtti-->
+     <label for="textarea"> tekstialue</label>
+     <textarea type="textarea" cols="10" rows="10"></textarea>
+
+     <!-- pudotusvalikon syöttö-->
+      <label for="dropdawn"> pudotusvalikko:</label>
+      <select id="autot">
+        <option value="audi"> audi</option>
+        <option value="bmv"> bmw</option>
+        <option value="mercedes bens"> mersu</option>
+        <option value="lamburghini"> lambo</option>
+        <option value="ferrari"> ferarri</option>
+        <option value="rolss roys">rolsroys</option>
+      </select>
+      <!--monivalinnan syöttö-->
+      <label for="osaan"> osaan</label>
+      <label for="html" class="cb">HTML</label>
+      <input type="checkbox" id="html" />
+      <label for="css" class="cb">CSS</label>
+      <input type="checkbox" id="css" />
+      <label for="javascript" class="cb">JAVASCRIPT</label>
+      <input type="checkbox" id="javascript" />
+      <!--yhenvalinnan syöttö-->
+      <label for="syönkoulussa"> syönkoulussa</label>
+      <label for="syön" class="rb">syön</label>
+      <input type="radio" id="syön"name="syö" />
+      <label for="ensyö" class="rb">en syö</label>
+      <input type="radio" id="ensyö" name="syö" />
+      <!--värit-->
+      <label for="color"> väri</label>
+      <input type="color" id="color" />
+      <!--päivämäärävalinnat-->
+      <label for="date">päivämäärä</label>
+      <input type="date" id="distance" />
+      <!--viikonvalinnat-->
+      <label for="week"> viikko</label>
+      <input type="week" id="week" />
+      <!--kuukaudenvalinnat-->
+      <label for="month"> kuukausi</label>
+      <input type="month" id="month" />
+      <!--liukuvalitsin-->
+      <label for="range">liukuvalitsin</label>
+      <input type="range" id="range" list="markers" />
+      <datalist id="markers">
+        <option value="0" label="0"></option>
+        <option value="25" label="25"></option>
+        <option value="50"></option>
+        <option value="75"></option>
+        <option value="100"></option>
+      </datalist>
+      <!--urln syötö-->
+      <p class="alas"><label for="url">url</label>
+      <input type="url" id="url" /></p>
+      <!--lähetäpainikeen syöttö-->
+      <input type="submit" value="lähetä" />
+    </form>
+</body>
+</html>
