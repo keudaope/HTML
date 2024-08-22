@@ -1,0 +1,65 @@
+html{
+    width: 80%;
+    margin: 0 auto;
+    font-family: 'Arial', sans-serif;
+}
+h1, h5{
+    text-align: center;
+}
+h1 img {
+    width: 200px;
+}
+h5 {
+    font-size: 8px;
+    margin-top: -10px;
+}
+header hr{
+    border: 5px #51AADF solid;
+    margin-top: -15px;
+}
+h3 .yksi img{
+    position:absolute;
+    top:220px;
+    left:175px;
+}
+h3 .kaksi img{
+    position: absolute;
+    left: 175px;
+    top: 318px;
+}
+h3 .kolme img{
+    position: absolute;
+    left: 175px;
+    top: 415px; 
+}
+footer{
+    clear: both;
+}
+footer p img{
+    position: absolute;
+    left: 175px;
+    top: 590px;
+    width: 50px;
+}
+footer p{
+    margin-left: 100px;
+}
+h3{
+    text-indent: 40px;
+}
+.nelja {
+    text-indent: 0px;
+}
+article {
+    width: 66%;
+    float: left;
+}
+aside{
+    float: left;
+    width: 33%;
+    border: 3px solid #51AADF;
+    border-radius: 10px;
+}
+ul{
+    list-style-type: none;
+}

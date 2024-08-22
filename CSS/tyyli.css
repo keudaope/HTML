@@ -1,0 +1,34 @@
+/* Tägeihin liittyvät */
+h2{
+    color: red;
+}
+a{
+    text-decoration: none;
+}
+
+/* Luokkiin liittyvät */
+.sporttinen {
+    color: blue;
+}
+.casual{
+    color: aqua;
+}
+
+/* idhin liittyvät */
+#tyylikas {
+    color: brown;
+}
+
+/* useampaan tägiin, luokkaan tai id:hen liittyvät */
+h2, .casual, #tyylikas{
+    border: 1px red solid;
+}
+
+/* tarkempi määritelmä "sisällä" */
+.sporttinen h2{
+    color: orange;
+}
+
+h2{
+    
+}
