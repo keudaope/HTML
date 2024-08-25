@@ -6,7 +6,12 @@
   display: flex;
   flex-wrap: wrap;
 }
-
+h2 {
+  margin-top: -20px;
+}
+.vasen {
+  margin-top: 10px;
+}
 .flex {
   background: antiquewhite;
   padding: 10px;
