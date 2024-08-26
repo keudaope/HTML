@@ -1,0 +1,48 @@
+main{
+    width: 80%;
+    margin: 0 auto;
+    display: grid;
+    padding: 20px;
+    grid-template-columns: auto auto;
+}
+aside{
+    background-color: #E3D5CA;
+    padding: 10px;
+}
+article{
+    background-color: #F5EBE0;
+    padding: 10px;
+}
+header, footer{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    padding: 10px;
+    background-color: #D6CCC2;
+    text-align: center;
+}
+nav ul{
+    list-style-type: none;
+}
+nav li{
+    margin-left: -20px;
+    margin-right: 20px;
+    font-size: 24px;
+}
+nav li a{
+    text-decoration: none;
+    color: green;
+    line-height: 2;
+}
+img{
+    float: right;
+    margin-right: 20px;
+}
+address p{
+    margin-top: -5px;
+    margin-bottom: -5px;
+    text-align: center;
+    margin-left: -100px;
+}
+footer .email{
+    margin-top: -15px;
+}

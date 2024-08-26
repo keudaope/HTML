@@ -1,0 +1,80 @@
+body {
+    background-color: #edede9;
+}
+main {
+    width: 100%;
+}
+header {
+    text-align: center;
+    background-color: #d6ccc2;
+    margin: 0 auto;
+    padding: 1.5em;
+}
+#left {
+    display: block;
+    float: left;
+    width: 30%;
+    background-color: #e3d5ca;
+}
+#left ul {
+    list-style: none;
+}
+a { 
+    text-decoration: none;
+    color: green;
+
+}
+#left a {
+    font-size: x-large;
+}
+#right {
+    display: block;
+    float: right;
+    width: 70%;
+    background-color: #edede9;
+}
+#right, #left {
+    min-height: 300px;
+}
+#osoite {
+    text-align: center;
+    list-style: none;
+    margin: 1.5em;
+}
+#right img {
+    display: block;
+    height: 220px;
+    float: right;
+    margin: 0 15px 0 0;
+}
+ul {
+    max-width: 350px;
+}
+footer {
+    display: block;
+    background-color: #d6ccc2;
+    padding: 5em;
+    min-width: 670px;
+}
+footer p {
+    text-align: center
+}
+/*------------------------
+      Responsiivisuus
+-------------------------*/
+
+/* Näytöt, joiden maksimileveys on 844px */
+@media (max-width:844px) {
+
+    
+  }
+  /* Näytöt, joiden maksimileveys on 799px */
+  @media (max-width: 799px) {
+
+  }
+  /* Näytöt, joiden maksimileveys on 479px */
+  @media (min-width: 479px) {
+    #left {
+        min-width: 100px;
+    }
+}

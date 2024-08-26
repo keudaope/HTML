@@ -1,0 +1,35 @@
+div{
+    padding: 10px;
+}
+#div1{
+    background-color: aliceblue;
+    z-index: 1;
+    position: relative;
+}
+#div2{
+    background-color: antiquewhite;
+    position: relative;
+    left: 30px;
+    bottom: 20px;
+}
+#div3{
+    width: 40%;
+    height: 100px;
+    background-color: beige;
+    overflow: auto;
+}
+#div4{
+    width: 40%;
+    float: left;
+    background-color: aqua;
+}
+#div5{
+    width: 40%;
+    float: right;
+    background-color: blanchedalmond;
+}
+#div6{
+    width: 40%;
+    clear: both;
+    background-color: burlywood;
+}

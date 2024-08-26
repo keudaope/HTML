@@ -1,0 +1,9 @@
+div{
+    max-width: 500px;
+    margin: 0 auto;
+    background-color: aquamarine;
+    color: red;
+    text-align: center;
+    line-height: 1.5;
+    font-size: 1.5em;
+}

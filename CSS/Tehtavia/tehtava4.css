@@ -1,0 +1,15 @@
+div{
+    width: 50%;
+    background-color: yellow;
+    margin: 0 auto;
+}
+#para::first-line{
+    color: green;
+    font-size: 28px;
+}
+#para + p{
+    background-color: aqua;
+}
+p[title="para"]{
+    font-weight: 900;
+}
