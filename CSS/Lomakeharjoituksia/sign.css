@@ -1,0 +1,38 @@
+main {
+  width: 400px;
+  margin: 0 auto;
+}
+header,
+footer {
+  background-color: #de8704;
+  color: yellow;
+  padding: 10px;
+}
+article {
+  background-color: #222536;
+}
+label {
+  display: inline-block;
+  color: yellow;
+  width: 150px;
+  text-align: right;
+  margin-top: 10px;
+}
+input[type="radio"] {
+  margin-right: -100px;
+}
+input[type="checkbox"] {
+  margin-right: -40px;
+  margin-bottom: 10px;
+}
+button {
+  padding: 5px;
+  color: yellow;
+}
+.green {
+  background-color: green;
+  margin-left: 250px;
+}
+.red {
+  background-color: red;
+}

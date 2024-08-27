@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="reg_form.css" />
+    <title>Registration Form</title>
+  </head>
+  <body>
+    <main>
+      <table>
+        <tr>
+          <th colspan="2">Registeröintilomake</th>
+        </tr>
+        <tr>
+          <td>Nimi:</td>
+          <td><input type="text" /></td>
+        </tr>
+        <tr>
+          <td>Salasana:</td>
+          <td><input type="password" /></td>
+        </tr>
+        <tr>
+          <td>Osoite:</td>
+          <td><textarea name="osoite" col="30" row="3"></textarea></td>
+        </tr>
+        <tr>
+          <td>Valitse peli:</td>
+          <td>
+            <input type="checkbox" />Jääkiekko <br />
+            <input type="checkbox" />Jalkapallo <br />
+            <input type="checkbox" />Sulkapallo <br />
+            <input type="checkbox" />Lentopallo <br />
+            <input type="checkbox" />Koripallo
+          </td>
+        </tr>
+        <tr>
+          <td>Sukupuoli:</td>
+          <td>
+            <input type="radio" name="gender" />Mies
+            <input type="radio" name="gender" />Nainen
+            <input type="radio" name="gender" />Muu
+          </td>
+        </tr>
+        <tr>
+          <td>Valitse ikäsi:</td>
+          <td>
+            <select name="ika" id="ika">
+              <option value="zero_to_ten">0 - 10 vuotta</option>
+              <option value="eleven_to_twenty">11 - 20 vuotta</option>
+              <option value="twentyone_to_thirty">21 - 30 vuotta</option>
+              <option value="thirtyone_to_forty">31 - 40 vuotta</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td>Valitse kuva:</td>
+          <td><input type="file" /></td>
+        </tr>
+        <tr>
+          <td colspan="2">
+            <button>Napauta minua</button>
+            <button>Tyhjennä</button>
+            <button>Lähetä lomake</button>
+          </td>
+        </tr>
+      </table>
+    </main>
+  </body>
+</html>
