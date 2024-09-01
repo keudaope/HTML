@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .lisaa {
+        background-color: yellow;
+      }
+      .osta {
+        background-color: orange;
+      }
+    </style>
+    <script>
+      function lisaa() {
+        alert("Lisätty");
+      }
+      function osta() {
+        console.log("Ladataan...");
+        alert("Ostettu");
+      }
+
+      function plus() {
+        var arvo = document.getElementById("vastaus").value;
+        arvo++;
+        document.getElementById("vastaus").value = arvo;
+      }
+      function minus() {
+        var tulosta = document.getElementById("vastaus").value;
+        tulosta--;
+        document.getElementById("vastaus").value = tulosta;
+      }
+      function neljalla() {
+        var arvo = document.getElementById("vastaus").value;
+        arvo = parseInt(arvo);
+        arvo += 4;
+        document.getElementById("vastaus").value = arvo;
+      }
+      function viidella() {
+        var arvo = document.getElementById("vastaus").value;
+        arvo = parseInt(arvo);
+        arvo -= 5;
+        document.getElementById("vastaus").value = arvo;
+      }
+      let laskutoimitus = "";
+      function luku(arvo) {
+        var lasku = document.getElementById("lasku");
+        laskutoimitus += arvo;
+        lasku.value = laskutoimitus;
+      }
+
+      function yhteensa() {
+        laskutoimitus = eval(laskutoimitus);
+        lasku.value = laskutoimitus;
+      }
+
+      const tuote = {
+        nimi: "koripallo",
+        hinta: 2095,
+      };
+      console.log(tuote);
+
+      tuote.hinta += 500;
+      console.log(tuote);
+
+      tuote["lahetysaika"] = "3 päivää";
+      console.log(tuote);
+
+      function vertaa(t1, t2) {
+        if (t1.hinta < t2.hinta) {
+          console.log(tuote1);
+        } else {
+          console.log(tuote2);
+        }
+      }
+      const tuote1 = {
+        nimi: "T-paita",
+        hinta: 799,
+      };
+      const tuote2 = {
+        nimi: "Sukat",
+        hinta: 599,
+      };
+      const tuote3 = {
+        nimi: "T-paita",
+        hinta: 799,
+      };
+      vertaa(tuote1, tuote2);
+
+      function onkoSamat(t1, t2) {
+        if (t1.nimi == t2.nimi && t1.hinta == t2.hinta) {
+          console.log("Tuotteet ovat samat");
+        } else {
+          console.log("Tuotteet ovat eri");
+        }
+      }
+      onkoSamat(tuote1, tuote3);
+
+      const pisteet = {
+        voitot: 0,
+        tappiot: 0,
+      };
+      function arvaa(arvaus) {
+        var kone = "";
+        var satunnaisluku = Math.random();
+        if (satunnaisluku < 0.5) {
+          kone = "Klaava";
+        } else {
+          kone = "Kruuna";
+        }
+        if (kone == arvaus) {
+          pisteet.voitot++;
+        } else {
+          pisteet.tappiot++;
+        }
+        console.log(
+          "voitot: " + pisteet.voitot + " tappiot: " + pisteet.tappiot
+        );
+      }
+    </script>
+  </head>
+  <body>
+    <p>Aikuisten valkoinen puuvilla T-paita</p>
+    <p>Hinta: 7.99 €</p>
+    <button class="lisaa" onclick="lisaa()">Lisää ostoskoriin</button>
+    <button class="osta" onclick="osta()">Osta nyt</button><br /><br />
+    <button onclick="plus()">Lisää</button>
+    <input type="text" id="vastaus" value="1" />
+    <button onclick="minus()">Vähennä</button><br />
+    <button onclick="neljalla()">+4</button
+    ><button onclick="viidella()">-5</button>
+    <p></p>
+    <input type="text" id="lasku" value="" />
+    <br />
+    <button onclick="luku(1)">1</button>
+    <button onclick="luku(2)">2</button>
+    <button onclick="luku(3)">3</button>
+    <button onclick="luku('+')">+</button>
+    <br />
+    <button onclick="luku(4)">4</button>
+    <button onclick="luku(5)">5</button>
+    <button onclick="luku(6)">6</button>
+    <button onclick="luku('-')">-</button>
+    <br />
+    <button onclick="luku(7)">7</button>
+    <button onclick="luku(8)">8</button>
+    <button onclick="luku(9)">9</button>
+    <button onclick="luku('*')">*</button>
+    <br />
+    <button onclick="luku(0)">0</button>
+    <button onclick="luku('/')">/</button>
+    <button onclick="luku('%')">%</button>
+    <button onclick="yhteensa()">=</button>
+    <p></p>
+    <button onclick="arvaa('Klaava')">Klaava</button>
+    <button onclick="arvaa('Kruuna')">Kruuna</button>
+  </body>
+</html>

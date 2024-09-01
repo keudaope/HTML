@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOM</title>
+  </head>
+  <body>
+    <button>DOM</button>
+    <button class="muutettava">DOM2</button>
+    <p></p>
+    <button
+      class="klaava"
+      onclick="document.querySelector('.kumpi').innerHTML = 'Painoit klaavaa'"
+    >
+      klaava
+    </button>
+    <button
+      class="kruuna"
+      onclick="document.querySelector('.kumpi').innerHTML = 'Painoit kruunaa'"
+    >
+      kruuna
+    </button>
+    <p class="kumpi"></p>
+    <p></p>
+    <input type="text" id="teksti" placeholder="etunimi" />
+    <button
+      onclick="const sisalto = document.getElementById('teksti').value;
+    document.getElementById('tulos').innerHTML = 'Nimesi on ' + sisalto"
+    >
+      Lähetä
+    </button>
+    <p id="tulos"></p>
+    <script>
+      console.log(document.querySelector("button"));
+      document.querySelector(".muutettava").innerHTML = "Muutettu DOM 2";
+    </script>
+  </body>
+</html>
