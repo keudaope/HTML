@@ -17,21 +17,20 @@ header hr{
     border: 5px #51AADF solid;
     margin-top: -15px;
 }
-h3 .yksi img{
-    position:absolute;
-    top:220px;
-    left:175px;
+h3 .luku img{
+   float: left;
+   margin: -10px -30px -10px 20px;
 }
-h3 .kaksi img{
+/* h3 .kaksi img{
     position: absolute;
-    left: 175px;
-    top: 318px;
+    left: 200px;
+    top: 330px;
 }
 h3 .kolme img{
     position: absolute;
-    left: 175px;
-    top: 415px; 
-}
+    left: 200px;
+    top: 425px; 
+} */
 footer{
     clear: both;
 }
