@@ -23,17 +23,63 @@
     </button>
     <p class="kumpi"></p>
     <p></p>
-    <input type="text" id="teksti" placeholder="etunimi" />
-    <button
-      onclick="const sisalto = document.getElementById('teksti').value;
-    document.getElementById('tulos').innerHTML = 'Nimesi on ' + sisalto"
-    >
-      Lähetä
-    </button>
+    <input type="text" id="teksti" placeholder="etunimi" onkeydown="nimesi()" />
+    <button>Lähetä</button>
     <p id="tulos"></p>
+    <input type="text" id="luku" /><button onclick="laske()">Laske</button>
+    <p id="vastaus"></p>
+
+    <input type="text" onkeyup="kirjoita()" id="kirjoita" />
+    <p id="v1"></p>
+
+    <button onclick="naytaKorinMaara()">Näytä määrä</button>
+    <button onclick="paivitaKori(1)">Lisää koriin</button>
+    <button onclick="paivitaKori(2)">+2</button>
+    <button onclick="paivitaKori(3)">+3</button>
+    <button onclick="paivitaKori(4)">+4</button>
+    <button onclick="paivitaKori(-1)">Poista korista</button>
+    <button onclick="paivitaKori(-2)">-2</button>
+    <button onclick="paivitaKori(-3)">-3</button>
+    <button onclick="tyhjennaKori()">Tyhjennä kori</button>
+    <p id="kori"></p>
     <script>
       console.log(document.querySelector("button"));
       document.querySelector(".muutettava").innerHTML = "Muutettu DOM 2";
+      function nimesi() {
+        if (event.key == "Enter") {
+          const sisalto = document.getElementById("teksti").value;
+          document.getElementById("tulos").innerHTML = "Nimesi on " + sisalto;
+        }
+      }
+      function laske() {
+        var arvo = document.getElementById("luku").value;
+        arvo = parseFloat(arvo);
+        document.getElementById("vastaus").innerHTML = arvo * 2;
+      }
+
+      function kirjoita() {
+        var teksti = document.getElementById("kirjoita").value;
+        document.getElementById("v1").innerHTML = teksti;
+      }
+
+      let korinMaara = 0;
+      naytaKorinMaara();
+      function paivitaKori(muutos) {
+        if (korinMaara + muutos > 10) {
+          alert("Kori on täynnä");
+          return;
+        }
+        if (korinMaara + muutos < 0) {
+          alert("Tyhjästä on paha nyhjästä");
+          return;
+        }
+        korinMaara += muutos;
+        naytaKorinMaara();
+      }
+      function naytaKorinMaara() {
+        document.getElementById("kori").innerHTML =
+          "Korissa on " + korinMaara + " tuotetta";
+      }
     </script>
   </body>
 </html>

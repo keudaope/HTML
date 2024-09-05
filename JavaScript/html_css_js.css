@@ -1,0 +1,75 @@
+.amazon {
+  background-color: rgb(255, 216, 20);
+  border-radius: 50px;
+  border: none;
+  padding: 10px 30px;
+}
+.uber {
+  border-radius: 10px;
+  padding: 10px;
+  height: 40px;
+}
+.now {
+  background-color: black;
+  color: white;
+}
+.later {
+  background-color: rgb(230, 230, 230);
+  border: none;
+}
+.vaihda-painike {
+  background-color: rgb(230, 230, 230);
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  margin-right: 10px;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.vaihtuu {
+  background-color: black;
+  color: white;
+}
+.laske {
+  background-color: green;
+  color: white;
+  border: none;
+  padding: 3px 10px;
+}
+/* laskin */
+body {
+  font-family: Arial;
+  background-color: rgb(0, 0, 0);
+}
+
+.calculation {
+  color: white;
+  font-size: 45px;
+  margin-top: 15px;
+  margin-bottom: 5px;
+}
+
+.calculator-button {
+  height: 60px;
+  width: 60px;
+  border-radius: 60px;
+  border: none;
+  font-size: 26px;
+  cursor: pointer;
+  margin-right: 5px;
+}
+
+.gray-button {
+  background-color: rgb(51, 51, 51);
+  color: white;
+}
+
+.orange-button {
+  background-color: rgb(254, 160, 10);
+  color: white;
+}
+
+.clear-button {
+  font-size: 17px;
+}
