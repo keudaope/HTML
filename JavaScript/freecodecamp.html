@@ -1,37 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Freecodecamp-tehtävien tsekkaus</title>
-    <script>
-        const character = "#";
-const count = 8;
-const rows = [];
-
-function padRow(rowNumber, rowCount) {
-  return " ".repeat(rowCount - rowNumber) + character.repeat(2 * rowNumber - 1) + " ".repeat(rowCount - rowNumber);
-}
-
-// TODO: use a different type of loop
-/*for (let i = 1; i <= count; i++) {
-  rows.push(padRow(i, count));
-}*/
-
-let continueLoop = false;
-let done = 0;
-        while (continueLoop) {
-  done++;
-  console.log(done);
-  rows.push(padRow(done, count));
-  if (done !== count) {
-    continueLoop = false;
-    console.log(done);
-  } 
-}
-    </script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="tehtavia.js"></script>
+  <title>Document</title>
 </head>
 <body>
-    <h1>Tarkistetaan Freecodecampin tehtävät</h1>
+  
 </body>
 </html>
