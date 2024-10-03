@@ -2,6 +2,7 @@ function tervehdi()
 {
     let etunimi = document.getElementById("enimi").value;
     let sukunimi = document.getElementById("snimi").value;
-    
-    alert("Hei " + etunimi + " " + sukunimi);
+    document.getElementById("vastaus").innerHTML = 
+    "Hei " + etunimi + " " + sukunimi+"!";
+    event.preventDefault();
 }

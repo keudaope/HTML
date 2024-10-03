@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+        async function getData() {
+          fetch('https://verkkosivusi.com/kysymykset.json')
+  .then(response => response.json())  // Muunna vastauksen JSON-muotoon
+  .then(data => {
+    // Käytä haettua dataa
+    console.log(data);
+
+    // Esimerkki: Tulostetaan ensimmäinen kysymys ja vastausvaihtoehdot
+    let ensimmäinenKysymys = data[0];
+    console.log('Kysymys:', ensimmäinenKysymys.kysymys);
+    console.log('Vaihtoehdot:', ensimmäinenKysymys.vaihtoehdot);
+    console.log('Oikea vastaus:', ensimmäinenKysymys.oikea_vastaus);
+  })
+  .catch(error => console.error('Virhe tiedoston hakemisessa:', error));
+}
+    </script>
+    <title>Document</title>
+    <button onclick="getData()">Hae data</button>
+</head>
+<body>
+    
+</body>
+</html>
