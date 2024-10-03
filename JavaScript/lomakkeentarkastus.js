@@ -32,7 +32,7 @@ function tarkasta()
         alert("Annapa puhelin");
     }
     else{
-        alert("kiitos tiedoista!");
+        alert(`Olet ${etunimi} ${sukunimi} \nAsut ${osoite} ${pnro} ${ptp} - osoitteessa \nja puhelinnumerosi on: ${puhelin}`);
     }
-    event.preventDefault();
+    e.preventDefault();
 }
